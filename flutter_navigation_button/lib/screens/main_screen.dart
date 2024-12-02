@@ -17,8 +17,8 @@ class _MainScreenState extends State<MainScreen> {
   static const List<Widget> _screenOptions = <Widget>[
     HomeScreen(),
     SearchScreen(),
-    ProfileScreen(),
-    FavoriteScreen()
+    FavoriteScreen(),
+    ProfileScreen()
   ];
 
   void _onItemTapped(int index) {

@@ -9,10 +9,23 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Home'),
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Text('Ini adalah halaman Home'),
-      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            GridView.builder(
+              shrinkWrap: true,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 8),
+              padding: const EdgeInsets.all(8),
+              itemCount: candiList.length,
+              itemBuilder: 
+              ),
+            )
+          ],
+        ),
+      )
     );
   }
 }
